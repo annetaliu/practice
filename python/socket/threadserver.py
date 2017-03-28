@@ -1,9 +1,10 @@
 
 import SocketServer
 class MyTCPHandler(SocketServer.BaseRequestHandler):
-    def handler(self):
+    def handle(self):
         while True:
-            data = self.request.recv(1024)
+            print "=="
+            data = self.request.recv(1024).strip()
             if not data: break
             print data
             self.request.sendall(data.upper())
