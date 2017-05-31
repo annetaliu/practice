@@ -1,0 +1,75 @@
+Hello @all,
+We'd like to inform you that LTE:TDD eNB TL16A_6.0 build TL16A_ENB_0000_006006_000000 is released for quicktest.
+Important Note: 
+#
+Version string: PS_CCS_FB1603_145409_86440
+#
+Version string: BTS_SC_DSPHWAPI_FB1603-trunk@93088
+
+Notes for changes in DSPHWAPI_BUILD regarding Common Tools, Faraday and Nyquist 
+are no more explicitly supported in Important Notes.
+Please find the information directly in the DSPHWAPI_BUILD delivery in WFT or SVN.
+#
+Hints:
+======
+
+* Rebase of Trunk MB_PS_LFS_OS_2016_07_0043 to FB1603 *
+
+!!! RP000776-N-s3 enabled !!!
+!!! Secure Uboot - Uboot must not downgraded anymore !!!
+!!! See https://confluence.int.net.nokia.com/display/PSCUSTPROJ/Security+activation+instructions
+
+- For serial console on FSPJ/ABIA the uboot enviroment variable "fsp_console_uart" must set to "0" (PR214194)
+
+- yaft >= revision 707 required
+
+Tested with:
+FSM-r2
+- FCMD
+FSM-r3
+- FSIH
+- FSMF
+- FSMFA + FBBCA
+- FSMFA + FBBAA
+FSM-r4
+- FCTJ-x31/A101 + 3 FSPJ (left or rigth slot)
+# 
+Hints:
+======
+
+* Rebase of Trunk MB_PS_LFS_OS_2016_07_0043 to FB1603 *
+
+!!! RP000776-N-s3 enabled !!!
+!!! Secure Uboot - Uboot must not downgraded anymore !!!
+!!! See https://confluence.int.net.nokia.com/display/PSCUSTPROJ/Security+activation+instructions
+
+- For serial console on FSPJ/ABIA the uboot enviroment variable "fsp_console_uart" must set to "0" (PR214194)
+
+- yaft >= revision 707 required
+
+Tested with:
+FSM-r2
+- FCMD
+FSM-r3
+- FSIH
+- FSMF
+- FSMFA + FBBCA
+- FSMFA + FBBAA
+FSM-r4
+- FCTJ-x31/A101 + 3 FSPJ (left or rigth slot)
+#
+Version string: BTS_SC_MCUHWAPI_FB1603-trunk@136921
+#
+Starting from TL16A_ENB_0000_000273_000000 the feature "LTE790-Signed Software in BTS release" is enabled!
+See Introducing LTE790-Signed Software in BTS release  for further details.
+ 
+You can subscribe or unsubscribe to the TDLTE release note quicktest
+mail through the links below:
+Subscribe
+Unsubscribe
+ 
+Best regards / Parhain terveisin 
+LTE:TDD SW Build Team
+-- 
+Mail: I_EXT_TDLTE_CB_SCM@internal.nsn.com
+

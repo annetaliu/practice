@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>HTML5 practice</title>
+    <script type="text/javascript">
+        function displayTime() {
+            now = new Date();
+            document.getElementById("output").innerHTML = now;
+            mm = now.getMonth();
+            date = now.getDate();
+            day = now.getDay();
+            yy = now.getFullYear();
+            time = now.getTime();
+            document.getElementById("output").innerHTML += "<br>mon:" + mm + "<br>day:" + date + "<br>time:" + time;
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="displayTime()">show time</button> <br>
+    <span id="output"></span>
+
+</body>
+
+</html>
